@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment # Kubernetes resource kind we are creating
 metadata:
-  name: welcome
+  name: crudapp
 spec:
   selector:
     matchLabels:
-      app: welcome
+      app: crudapp
   #replicas: 2 # Number of replicas that will be created for this deployment
   template:
     metadata:
       labels:
-        app: welcome
+        app: crudapp
     spec:
       containers:
-      -   name: welcome
-          image: hello-world
+      -   name: crudapp
+          image: app-crud:backendv1
           resources:
             limits:
               memory: 512Mi
