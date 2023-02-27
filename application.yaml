@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: crudapp
+  name: hello-docker
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/D-Brio7/CRUD-APP.git
+    repoURL: https://github.com/D-Brio7/hello-docker.git
     targetRevision: HEAD
     path: dev
   destination:
