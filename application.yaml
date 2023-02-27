@@ -1,0 +1,14 @@
+apiVersion: hello-docker.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-docker
+  namespace: hello-docker
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/D-Brio7/hello-docker.git
+    targetRevision: HEAD
+    path: hello-docker
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: hello-docker
