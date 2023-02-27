@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       -   name: welcome
-          image: hello-world
+          image: demo
           resources:
             limits:
               memory: 512Mi
