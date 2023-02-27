@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/D-Brio7/hello-docker.git
     targetRevision: HEAD
-    path: hello-docker
+    path: dev
   destination:
     server: https://kubernetes.default.svc
     namespace: hello-docker
