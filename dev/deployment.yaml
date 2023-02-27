@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment # Kubernetes resource kind we are creating
 metadata:
-  name: hello-docker
+  name: angular
 spec:
   selector:
     matchLabels:
-      app: hello-docker
+      app: angular
   #replicas: 2 # Number of replicas that will be created for this deployment
   template:
     metadata:
       labels:
-        app: hello-docker
+        app: angular
     spec:
       containers:
-      -   name: hello-docker
-          image: hello-docker
+      -   name: angular
+          image: app-crud:frontendv1
           resources:
             limits:
               memory: 512Mi
